@@ -1,11 +1,15 @@
 package com.taskmanger.TaskManger.svc;
 
+import com.taskmanger.TaskManger.repository.Auditable;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
 import javax.persistence.*;
 import java.time.OffsetDateTime;
 
 @Entity
 @Table(name = "TASK")
-public class Task {
+public class Task extends Auditable<String> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -10,6 +10,10 @@ public class TaskView {
     private String assignedTo;
     private OffsetDateTime scheduledTime;
     private OffsetDateTime completionTime;
+    private String createdBy;
+    private String lastUpdatedBy;
+    private String createdDate;
+    private String lastUpdatedDate;
 
     public Long getId() {
         return id;
@@ -57,5 +61,37 @@ public class TaskView {
 
     public void setCompletionTime(OffsetDateTime completionTime) {
         this.completionTime = completionTime;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public String getLastUpdatedBy() {
+        return lastUpdatedBy;
+    }
+
+    public void setLastUpdatedBy(String lastUpdatedBy) {
+        this.lastUpdatedBy = lastUpdatedBy;
+    }
+
+    public String getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public String getLastUpdatedDate() {
+        return lastUpdatedDate;
+    }
+
+    public void setLastUpdatedDate(String lastUpdatedDate) {
+        this.lastUpdatedDate = lastUpdatedDate;
     }
 }

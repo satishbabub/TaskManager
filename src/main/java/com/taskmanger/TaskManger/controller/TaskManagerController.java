@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
+/*http://localhost:8080/swagger-ui.html
+* access swagger
+* */
 @RestController
 @RequestMapping("/tasks")
 public class TaskManagerController {
